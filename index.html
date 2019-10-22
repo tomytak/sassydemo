@@ -26,6 +26,7 @@
       <h1><a href="#">Tomy's SassyBase</a></h1>
     </div>
     <nav class="site-nav">
+      <div class="menu-button">Menu</div>
       <ul>
         <li><a href="#typography">Typography</a></li>
         <li><a href="#layout">Layout</a></li>
@@ -38,37 +39,13 @@
       <h2>Tomy's Sassy Base</h2>
       <p> this is a simple, single-page website built with SASS. Lorem ipsum dolor sit amet consectetur, adipisicing
         elit. Quibusdam deleniti nihil velit sapiente omnis sit dolores ducimus aut earum voluptatibus dignissimos.</p>
-      <a class="button">Go to Typography</a>
+      <a href="#typography" class="button">Go to Typography</a>
     </div>
   </section>
 
   <section id="typography">
 
     <div class="container">
-
-      <h3 class="sectionhead">Typography</h3>
-
-      <small class="meta">Typographic Scale</small>
-
-      <h1>Heading 1</h1>
-      <h2>Heading 2</h2>
-      <h3>Heading 3</h3>
-
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-        laborum</p>
-      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
-        aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
-        eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-        consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam
-        quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
-        nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse
-        quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
-
-      <small class="meta">Type Specimen</small>
 
       <h1 class="mainhead">Heading Title</h1>
       <h2 class="subhead">This is a subhead</h2>
@@ -97,88 +74,33 @@
     </div>
   </section>
 
-  <section id="layout">
-
-
-
-    <hr>
-    <h3 class="sectionhead">Layout</h3>
-
+  <section id="layout" class="split-crossed-right">
     <div class="container">
-      <small class="meta">Images</small>
-      <img src="http://via.placeholder.com/1500x500" alt="Placeholder image" />
-      <img src="http://place-hold.it/1500x500" alt="Placeholder image" />
-
-      <hr>
-
-      <small class="meta">Grid</small>
-      <div class="row demo">
-        <div class="column">Column</div>
+      <div class="image-wrapper">
+        <img src="https://via.placeholder.com/1500" alt="Placeholder image">
       </div>
-      <div class="row demo">
-        <div class="column one-half">&frac12;Column </div>
-        <div class="column one-half">&frac12;Column</div>
+      <div class="text-block">
+        <h4>Centered Text and Image</h4>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam, voluptatum totam nesciunt sapiente incidunt
+          exercitationem beatae saepe, a, iusto suscipit alias rem quos mollitia quis repudiandae quae vitae pariatur
+          aut laboriosam dignissimos laudantium fuga dolorem illum.
+        </p>
       </div>
-      <div class="row demo">
-        <div class="column one-third">&frac13; Column </div>
-        <div class="column one-third">&frac13; Column</div>
-        <div class="column one-third">&frac13; Column</div>
-      </div>
-      <div class="row demo">
-        <div class="column one-third">&frac13; Column</div>
-        <div class="column two-thirds">&frac23; Column</div>
-      </div>
-      <div class="row demo">
-        <div class="column one-fourth">&frac14; Column</div>
-        <div class="column one-fourth">&frac14; Column</div>
-        <div class="column one-fourth">&frac14; Column</div>
-        <div class="column one-fourth">&frac14; Column</div>
-      </div>
+    </div>
+  </section>
 
-      <hr />
-
-      <div class="row">
-        <div class="one-half column">
-          <img src="https://via.placeholder.com/1500" alt="Placeholder image">
-        </div>
-        <div class="one-half column">
-          <h4>Text on the right</h4>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam, voluptatum totam nesciunt sapiente incidunt
-            exercitationem beatae saepe, a, iusto suscipit alias rem quos mollitia quis repudiandae quae vitae pariatur
-            aut laboriosam dignissimos laudantium fuga dolorem illum.
-          </p>
-        </div>
+  <section id="layout" class="split-crossed-row-reversed">
+    <div class="container">
+      <div class="image-wrapper">
+        <img src="https://via.placeholder.com/1500" alt="Placeholder image">
       </div>
-
-      <div class="row swap">
-        <div class="one-half column">
-          <img src="https://via.placeholder.com/1500" alt="Placeholder image">
-        </div>
-        <div class="one-half column">
-          <h4>Text on the Left</h4>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam, voluptatum totam nesciunt sapiente
-            incidunt
-            exercitationem beatae saepe, a, iusto suscipit alias rem quos mollitia quis repudiandae quae vitae
-            pariatur
-            aut laboriosam dignissimos laudantium fuga dolorem illum.
-          </p>
-        </div>
+      <div class="text-block">
+        <h4>Centered Text and Image</h4>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam, voluptatum totam nesciunt sapiente incidunt
+          exercitationem beatae saepe, a, iusto suscipit alias rem quos mollitia quis repudiandae quae vitae pariatur
+          aut laboriosam dignissimos laudantium fuga dolorem illum.
+        </p>
       </div>
-
-
-      <div class="row center">
-        <div class="one-half column">
-          <img src="https://via.placeholder.com/1500" alt="Placeholder image">
-        </div>
-        <div class="one-half column">
-          <h4>Centered Text and Image</h4>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam, voluptatum totam nesciunt sapiente incidunt
-            exercitationem beatae saepe, a, iusto suscipit alias rem quos mollitia quis repudiandae quae vitae pariatur
-            aut laboriosam dignissimos laudantium fuga dolorem illum.
-          </p>
-        </div>
-      </div>
-
     </div>
   </section>
 
@@ -196,6 +118,9 @@
     var scroll = new SmoothScroll('a[href*="#"]');
   </script>
 
+  <script>
+    var scroll = new SmoothScroll('a[href*="#"]');
+  </script>
 </body>
 
 </html>

@@ -14,7 +14,7 @@
     }
 
     a{
-        color:#fff; 
+        color:#fff;  
         text-decoration: none;
         list-style: none;
     }
@@ -30,11 +30,23 @@
     justify-content: center;
     margin-top: 6em;
 }
+
+//site nav
+
 .site-nav{
+    background: rgba(255,0,0,.5);
+    position: fixed;
+    width: 100%;
+    height: 100vh;  
+    left: 0;
+    display: grid;
+    place-items: center;
+    //center item on page display:grid; place-iterms:center;
+
     ul{
+        display: none;
         margin: 0; 
         padding: 0;
-        display: flex;
         list-style: none;
     }
 
@@ -42,8 +54,21 @@
     padding: 1em;
     display: block;
     }
+
+    &.active {
+        ul{
+        display: block;
+        }
+    }
 }
 
+//menu button
+.menu-button{
+    position: absolute;
+    top: 1em;
+    right: 2em;
+
+}
 section {
     padding: 6em 0;
     min-height:100vh;
@@ -58,6 +83,10 @@ section {
     color:#fff; 
     background-image: url'https://unsplash.com/photos/3VdXaG9lvqc';
     background-size: cover;
+ 
+    h2 {
+        font-size: 4em;
+    }   
 
     p{
         margin-left: auto;
@@ -65,3 +94,47 @@ section {
     }
 }
 
+//layout
+
+.split-crossed-right {
+    @media (min-width: $breakpoint-small) { 
+    .container {
+        display: flex;
+        align-items: center;
+        // flex-direction: row-reverse;
+    }
+    
+    .image-block {
+        width: 50%;
+        background: maroon;
+    }
+
+    .text-block {
+        width: 50%;
+        background: lightpink;
+        transform: translatex(-2em);
+        // transform: translatex(2em);
+    }
+}
+}
+
+.split-crossed-row-reversed {
+    @media (min-width: $breakpoint-small) { 
+    .container {
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+    
+    .image-block {
+        width: 50%;
+        background: maroon;
+    }
+
+    .text-block {
+        width: 50%;
+        background: lightpink;
+        transform: translatex(2em);
+    }
+}
+}

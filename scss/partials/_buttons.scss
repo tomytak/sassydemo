@@ -13,6 +13,7 @@ button,
     line-height: 1;
     border: 1px solid $color-links;
     cursor: pointer;
+    text-decoration: none;
 
     &:hover {
         background-color: $color-links-dark;
@@ -31,4 +32,15 @@ button,
         }
     }
 
-}
+    &.dark {
+        color: #fff;
+        background-color: transparent; 
+        border-color: #fff;
+    }
+
+        &:hover { 
+            background-color: $color-links-dark;
+            color: #fff; 
+            border-color: $color-links-dark;
+        }
+    }
