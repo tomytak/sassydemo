@@ -34,7 +34,6 @@
 //site nav
 
 .site-nav{
-    background: rgba(255,0,0,.5);
     position: fixed;
     width: 100%;
     height: 100vh;  
@@ -44,6 +43,7 @@
     //center item on page display:grid; place-iterms:center;
 
     ul{
+        background: rgba(255,0,0,.5);
         display: none;
         margin: 0; 
         padding: 0;
@@ -57,7 +57,7 @@
 
     &.active {
         ul{
-        display: block;
+            display: block;
         }
     }
 }
@@ -67,6 +67,7 @@
     position: absolute;
     top: 1em;
     right: 2em;
+    cursor: pointer;
 
 }
 section {
