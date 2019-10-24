@@ -26,17 +26,18 @@
     width: 100%;
 }
 
-.site-footer{
+.site-footer .site-nav{
     justify-content: center;
     margin-top: 6em;
 }
 
 //site nav
 
-.site-nav{
-    position: fixed;
+ .site-nav{ //.site-header
+    position: absolute;
     width: 100%;
-    height: 100vh;  
+    height: 100vh;
+    top: 0;  
     left: 0;
     display: grid;
     place-items: center;
@@ -44,7 +45,7 @@
 
     ul{
         background: rgba(255,0,0,.5);
-        display: none;
+        display: none; 
         margin: 0; 
         padding: 0;
         list-style: none;
@@ -53,21 +54,26 @@
     a {
     padding: 1em;
     display: block;
-    }
+    } 
 
     &.active {
+        position: fixed;
+        height: 100;
+        z-index: 100;
         ul{
             display: block;
         }
+        background: rgba(255,0,0,.5);
     }
 }
 
 //menu button
 .menu-button{
     position: absolute;
-    top: 1em;
+    top: 2em;
     right: 2em;
     cursor: pointer;
+    //background-color: black; //temp. remove//
 
 }
 section {
